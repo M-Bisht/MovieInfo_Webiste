@@ -7,14 +7,14 @@ container.insertAdjacentElement("afterEnd", footer)
 const apiKey = "f5d22ab1";
 
 async function apiSearch(searchVal) {
-  const url = `http://www.omdbapi.com/?s=${searchVal}&type=movie&apikey=${apiKey}`;
+  const url = `https://www.omdbapi.com/?s=${searchVal}&type=movie&apikey=${apiKey}`;
   const fetch = await axios.get(url);
   const data = fetch.data.Search;
   return data;
 }
 
 async function imdbSearch(id) {
-  const url = `http://www.omdbapi.com/?i=${id}&plot=short&apikey=${apiKey}`;
+  const url = `https://www.omdbapi.com/?i=${id}&plot=short&apikey=${apiKey}`;
   const fetch = await axios.get(url);
   const data = fetch.data;
   return data;

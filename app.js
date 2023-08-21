@@ -178,11 +178,14 @@ async function apiData(search) {
   });
 }
 
-apiData("shinchan");
-apiData("pokemon");
-apiData("batman");
-apiData("spiderman");
-apiData("aaa");
+async function movie() {
+  await apiData("shinchan");
+  await apiData("pokemon");
+  await apiData("naruto");
+  await apiData("avengers");
+}
+
+movie();
 
 function arrow(dir) {
   const arrow = document.createElement("i");

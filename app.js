@@ -241,9 +241,9 @@ async function heroImgSet() {
 
     setInterval(() => {
       counter--;
-      counter < -`${cLength - 1}` ? (counter = 0) : counter;
+      counter < -`${cLength - 5}` ? (counter = 0) : counter;
       slider();
-    }, 3000);
+    }, 6000);
   });
 }
 heroImgSet();

@@ -243,7 +243,7 @@ async function heroImgSet() {
       counter--;
       counter < -`${cLength - 5}` ? (counter = 0) : counter;
       slider();
-    }, 6000);
+    }, 7000);
   });
 }
 heroImgSet();
